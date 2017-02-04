@@ -12,6 +12,8 @@ library(rvest)
 # this one does not
 url <- "https://ychhops.com/varieties"
 
+# looks an interesting page, but will require MORE crawling. Reminiscient of OIE
+
 hops_raw <- read_html(url) %>%
     html_nodes(xpath='//*[@id="adminForm"]/table') %>%
     html_table()
